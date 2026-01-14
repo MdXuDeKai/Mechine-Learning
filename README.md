@@ -59,8 +59,8 @@ After SHAP importance analysis and DeLong test, the final model uses the followi
 
 ### Validation Sets
 
-- **External Validation**: External hospital data (n=50)
-- **Temporal Validation**: Hospital data from 2025 (n=100)
+- **External Validation**: External hospital data 
+- **Temporal Validation**: Hospital data from 2025 
 
 ### Data Preprocessing
 
@@ -140,44 +140,6 @@ streamlit run app.py
 
 For detailed deployment guide, see [web/DEPLOY.md](web/DEPLOY.md)
 
-## 📁 Project Structure
-
-```
-乔阑尾炎机器学习/
-├── README.md                                    # This file
-├── requirements.txt                             # Python dependencies
-│
-├── 数据/                                        # Data files
-│   ├── 2024年本院数据.csv                       # Training set raw data
-│   ├── 2025年本院数据.csv                       # Temporal validation set
-│   ├── 天医数据.csv                             # External validation set
-│   ├── appendicitis_cleaned_imputed_final.csv  # Preprocessed training data
-│   └── ...
-│
-├── 结果/                                        # Models and results
-│   ├── final_model.pkl                          # Final model (7 features)
-│   ├── model_AdaBoost.pkl                       # AdaBoost model
-│   ├── final_features.pkl                      # Final feature list
-│   ├── Table*.csv                               # Result tables
-│   └── ...
-│
-├── 图表/                                        # Visualization charts
-│   ├── Figure*.png                              # Main figures
-│   └── ...
-│
-├── 阑尾炎数据分析.ipynb                         # Data preprocessing
-├── 阑尾炎机器学习_ECM方法.ipynb                 # Model training (main notebook)
-├── 阑尾炎机器学习_外部验证与时序验证.ipynb       # External validation
-│
-└── web/                                         # Web application
-    ├── app.py                                   # Streamlit main application
-    ├── setup.py                                 # Setup script
-    ├── requirements.txt                         # Web app dependencies
-    ├── README.md                                # Web app documentation
-    ├── DEPLOY.md                                # Deployment guide
-    └── QUICKSTART.md                            # Quick start guide
-```
-
 ## 🔬 Research Methods
 
 ### Model Selection
@@ -228,12 +190,6 @@ For detailed deployment guide, see [web/DEPLOY.md](web/DEPLOY.md)
 
 ## 📝 Usage Instructions
 
-### For Researchers
-
-1. Check `阑尾炎机器学习_ECM方法.ipynb` for complete modeling workflow
-2. Check `阑尾炎机器学习_外部验证与时序验证.ipynb` for validation results
-3. All result tables are saved in `结果/` directory
-4. All charts are saved in `图表/` directory
 
 ### For Clinicians
 
@@ -274,18 +230,6 @@ pred = (prob >= 0.4963).astype(int)
 
 Contributions are welcome! Please feel free to submit Issues and Pull Requests.
 
-## 🔍 Citation
-
-If this project is helpful for your research, please cite:
-
-```bibtex
-@software{appendicitis_prediction,
-  title = {Preoperative Prediction Model for Complicated Appendicitis},
-  author = {Xu, Dekai},
-  year = {2024},
-  url = {https://github.com/yourusername/appendicitis-prediction}
-}
-```
 
 ## 📄 License
 
@@ -298,22 +242,11 @@ This prediction system is for reference only and cannot replace professional med
 ## 📧 Contact
 
 For questions or suggestions, please contact:
-
-- GitHub Issues: [Submit an Issue](https://github.com/yourusername/appendicitis-prediction/issues)
 - Email: xdk1207@sina.com
 
 ## 🙏 Acknowledgments
 
 Thanks to all clinicians and researchers who participated in data collection and model validation.
-
-## 📊 Project Status
-
-- ✅ Data preprocessing completed
-- ✅ Model training completed
-- ✅ External validation completed
-- ✅ Temporal validation completed
-- ✅ Web application development completed
-- 🚀 Ready to deploy to Streamlit Cloud
 
 ---
 
