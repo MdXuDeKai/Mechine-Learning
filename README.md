@@ -48,19 +48,6 @@ After SHAP importance analysis and DeLong test, the final model uses the followi
 
 > **Note**: MLR, NLR, and NMLR are derived indicators, automatically calculated from basic laboratory values
 
-## 📊 Dataset
-
-### Training Set
-
-- **Source**: Hospital data from 2024
-- **Sample Size**: 536 cases (after excluding cases with missing pathology)
-- **Number of Features**: 23 candidate features
-- **Outcome Distribution**: Complicated appendicitis 69.6% vs. Simple appendicitis 30.4%
-
-### Validation Sets
-
-- **External Validation**: External hospital data 
-- **Temporal Validation**: Hospital data from 2025 
 
 ### Data Preprocessing
 
@@ -251,5 +238,5 @@ Thanks to all clinicians and researchers who participated in data collection and
 ---
 
 **Version**: v1.0
-**Last Updated**: 2024
+**Last Updated**: 2026
 **Maintenance Status**: ✅ Actively maintained
