@@ -1,0 +1,84 @@
+📁 Web应用文件结构说明
+========================
+
+已创建的文件：
+-------------
+
+1. app.py
+   - Streamlit主应用文件
+   - 包含完整的预测界面和功能
+   - 支持23个特征输入和自动计算衍生指标
+
+2. requirements.txt
+   - Python依赖包列表
+   - 包含streamlit、pandas、numpy、scikit-learn、joblib
+
+3. README.md
+   - 完整的项目说明文档
+   - 包含本地运行和部署指南
+
+4. DEPLOY.md
+   - 详细的Streamlit Cloud部署指南
+   - 包含常见问题解决方案
+
+5. QUICKSTART.md
+   - 快速开始指南
+   - 适合快速上手使用
+
+6. setup.py
+   - 设置脚本
+   - 用于复制模型文件到web目录
+
+7. .streamlit/config.toml
+   - Streamlit配置文件
+   - 设置主题和服务器配置
+
+8. .gitignore
+   - Git忽略文件配置
+   - 排除不需要版本控制的文件
+
+需要手动操作：
+-------------
+
+1. 复制模型文件：
+   - 运行: python setup.py
+   - 或手动复制: 结果/model_AdaBoost.pkl → web/model_AdaBoost.pkl
+
+2. 测试本地运行：
+   - cd web
+   - streamlit run app.py
+
+3. 部署到GitHub：
+   - git add web/
+   - git commit -m "Add Streamlit web app"
+   - git push
+
+4. 部署到Streamlit Cloud：
+   - 访问 https://share.streamlit.io/
+   - 按照 QUICKSTART.md 中的步骤操作
+
+注意事项：
+---------
+
+⚠️ 模型文件大小：
+   - 如果 model_AdaBoost.pkl > 100MB，需要使用 Git LFS
+   - 命令: git lfs track "*.pkl"
+
+⚠️ 公开仓库：
+   - Streamlit Community Cloud 免费版只支持公开仓库
+   - 确保你的GitHub仓库是公开的
+
+⚠️ 路径问题：
+   - 部署时确保 Main file path 设置为: web/app.py
+   - 不是 app.py
+
+下一步：
+-------
+
+1. ✅ 运行 setup.py 复制模型文件
+2. ✅ 本地测试应用
+3. ✅ 推送到GitHub
+4. ✅ 部署到Streamlit Cloud
+5. ✅ 分享应用链接
+
+祝你部署顺利！🎉
