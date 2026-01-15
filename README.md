@@ -1,4 +1,4 @@
-# Mechine-Learning
+# Complicated_Appendicitis
 # 🏥 Preoperative Prediction Model for Complicated Appendicitis
 
 A machine learning-based preoperative prediction system for complicated appendicitis (gangrenous/perforated/periappendicitis), using AdaBoost algorithm with rigorous feature selection and external validation.
